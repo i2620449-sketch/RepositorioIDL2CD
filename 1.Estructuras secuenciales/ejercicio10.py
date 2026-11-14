@@ -15,9 +15,9 @@ total_piezas: int = 0
 # ==============================
 monto = int(input("Cantidad a retirar (S/, entero): "))
 
-# ==============================
-# 3. PROCESO Y 4. SALIDA DE DATOS
-# ==============================
+# ====================
+# 3. PROCESO 
+# ====================
 restante = monto
 print(f"\nPara retirar S/ {monto} el cajero entrega:")
 for valor in denominaciones:
@@ -27,4 +27,7 @@ for valor in denominaciones:
         total_piezas += cantidad
     restante = restante % valor
 
+# ============================
+# 4. SALIDA DE DATOS
+# ============================
 print(f"Total de billetes/monedas: {total_piezas}")
